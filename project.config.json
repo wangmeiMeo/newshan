@@ -1,0 +1,56 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"miniprogramRoot": "./dist/",
+	"compileType": "miniprogram",
+	"appid": "wx91101e95149c98da",
+	"projectname": "shanshan_offical",
+	"libVersion": "2.2.2",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "scene",
+					"pathName": "pages/index/main",
+					"query": "scene=A001_L0001",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "scene",
+					"pathName": "pages/index/main",
+					"query": "scene=A001_L0001",
+					"scene": "1037",
+					"referrerInfo": {
+						"appId": "wx0bca86659c91b215",
+						"extraData": "{\"webankAppId\":\"\",\"dest\":\"\",\"unionId\":\"\"}"
+					}
+				}
+			]
+		}
+	}
+}

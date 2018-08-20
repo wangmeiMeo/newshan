@@ -1,0 +1,12 @@
+<template name="index$9ebe955c">
+  <view class="_div data-v-07100e7c container">
+    <view class="_view data-v-07100e7c barcode">
+      <view class="_view data-v-07100e7c barnum">
+        <text class="_text data-v-07100e7c">*</text>^_^付款时，请向收银员出示此条形码^_^</view>
+      <canvas width="300" height="200" canvas-id="barcode" class="_canvas data-v-07100e7c"></canvas>
+      <view class="_view data-v-07100e7c barnum">
+        <text class="_text data-v-07100e7c">{{code}}</text>
+      </view>
+    </view>
+  </view>
+</template>

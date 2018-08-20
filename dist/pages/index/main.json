@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "珊珊JustGo",
+  "usingComponents": {
+    "qrcode-entry": "./../../qrcode-tool/pages/components/qrcode-entry"
+  }
+}

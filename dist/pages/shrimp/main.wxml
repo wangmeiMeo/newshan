@@ -1,0 +1,1 @@
+<import src="../../components/shrimp$8588ff3a" /><template is="shrimp$8588ff3a" data="{{ ...$root['0'], $root }}"/>

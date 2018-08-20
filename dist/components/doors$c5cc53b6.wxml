@@ -1,0 +1,9 @@
+<template name="doors$c5cc53b6">
+  <view class="_div data-v-7339d308 doors">
+    <image class="_img data-v-7339d308 doorlogo" src="{{doorlogo}}" alt></image>
+    <label wx:if="{{flag==1}}" class="_span data-v-7339d308">{{storename1}}</label>
+    <label wx:else class="_span data-v-7339d308">{{storeName}}</label>
+    <view class="_div data-v-7339d308 search" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <image src="{{doorurl}}" alt class="_img data-v-7339d308"></image>搜索门店</view>
+  </view>
+</template>

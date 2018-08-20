@@ -1,0 +1,24 @@
+<template name="index$201d85a0">
+  <view class="_div data-v-5f3ccbca container">
+    <view class="_view data-v-5f3ccbca banner">
+      <image class="_img data-v-5f3ccbca bannerimg" src="http://f.cdn.cloudolphin.com/membercard1.jpg"></image>
+      <view class="_view data-v-5f3ccbca portrait_head">
+        <open-data class="_open-data data-v-5f3ccbca portrait" type="userAvatarUrl"></open-data>
+      </view>
+      <text class="_text data-v-5f3ccbca memberid">会员卡号:{{memberId}}</text>
+      <text class="_text data-v-5f3ccbca memberid memberid1">会员积分:{{jifen}}</text>
+    </view>
+    <view class="_view data-v-5f3ccbca barcode">
+      <view class="_view data-v-5f3ccbca barnum">
+        <text class="_text data-v-5f3ccbca">*</text>付款时，请向收银员出示此条形码</view>
+      <canvas width="300" height="200" canvas-id="barcode" class="_canvas data-v-5f3ccbca"></canvas>
+    </view>
+    <view class="_view data-v-5f3ccbca list">
+      <view class="_view data-v-5f3ccbca record" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <image class="_img data-v-5f3ccbca img" src="/copy-asset/static/images/record.gif"></image>
+        <text class="_text data-v-5f3ccbca">我的卡券</text>
+        <image class="_img data-v-5f3ccbca jt" src="/copy-asset/static/images/jt.png"></image>
+      </view>
+    </view>
+  </view>
+</template>

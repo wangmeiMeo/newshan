@@ -1,0 +1,19 @@
+<import src="doors$5be01cdc" />
+<import src="banner$1bdce36f" />
+<import src="webank$10a27966" />
+<import src="indexcoupon$66e9bd45" />
+<template name="index$00484f98">
+  <view class="_div data-v-0bc39617 contain">
+    <view class="_div data-v-0bc39617 header">
+      <view class="_div data-v-0bc39617 door">
+        <template data="{{...$root[$kk+'0'], $root}}" is="doors$5be01cdc"></template>
+      </view>
+      <template data="{{...$root[$kk+'1'], $root}}" is="banner$1bdce36f"></template>
+    </view>
+    <qrcode-entry bindtap="handleProxy" class="_qrcode-entry data-v-0bc39617 qrcode-entry" config="{{qrcodeConfig}}" data-eventid="{{'0'}}" data-comkey="{{$k}}"></qrcode-entry>
+    <view style="margin-top:20rpx;" class="_div data-v-0bc39617">
+      <template data="{{...$root[$kk+'3'], $root}}" is="webank$10a27966"></template>
+    </view>
+    <template data="{{...$root[$kk+'4'], $root}}" is="indexcoupon$66e9bd45"></template>
+  </view>
+</template>

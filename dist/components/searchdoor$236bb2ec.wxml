@@ -1,0 +1,6 @@
+<import src="doorname$c0f72388" />
+<template name="searchdoor$236bb2ec">
+  <view class="_div data-v-420c9e87">
+    <template data="{{...$root[$kk+'0'], $root}}" is="doorname$c0f72388"></template>
+  </view>
+</template>

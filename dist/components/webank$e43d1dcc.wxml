@@ -1,0 +1,18 @@
+<template name="webank$e43d1dcc">
+  <view class="_div data-v-e47f88ba webank">
+    <image class="_img data-v-e47f88ba img000" src="{{webankurl}}" alt></image>
+    <view class="_div data-v-e47f88ba clearfix imgs">
+      <navigator bindtap="handleProxy" wx:if="{{extraData.webankAppId!=''&&extraData.webankAppId!='undefined'&&extraData.unionId!=''&&extraData.unionId!='undefined'&&extraData.phone!=''&&extraData.phone!='undefined'&&extraData.openId!=''&&extraData.openId!='undefined'&&extraData.memberId!=''&&extraData.memberId!='undefined'}}"
+        target="miniProgram" open-type="navigate" app-id="{{AppId}}" extra-data="{{extraData}}" version="{{AppVersion}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_navigator data-v-e47f88ba">
+        <image class="_img data-v-e47f88ba fl" src="{{webankurl01}}" alt></image>
+      </navigator>
+      <navigator wx:else bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_navigator data-v-e47f88ba">
+        <image class="_img data-v-e47f88ba fl" src="{{webankurl01}}" alt></image>
+      </navigator>
+      <view class="_div data-v-e47f88ba fr">
+        <image class="_img data-v-e47f88ba ritop" src="{{webankurl02}}" alt></image>
+        <image src="{{webankurl03}}" alt class="_img data-v-e47f88ba"></image>
+      </view>
+    </view>
+  </view>
+</template>

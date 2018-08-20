@@ -1,0 +1,29 @@
+<template name="index$c165eaaa">
+  <view class="_view data-v-fec81ed6 page">
+    <view class="_view data-v-fec81ed6 voucher-header">
+      <view class="_view data-v-fec81ed6 voucher-logos">
+        <image src="/copy-asset/static/images/logos.jpg" class="_img data-v-fec81ed6"></image>
+      </view>
+      <view class="_view data-v-fec81ed6 voucher-tetles">
+        <text class="_text data-v-fec81ed6">{{coupondetail.type}}</text>
+      </view>
+      <view class="_view data-v-fec81ed6 voucher-money">
+        <text class="_text data-v-fec81ed6 money-tetle">{{coupondetail.face_value}}</text>
+        <text class="_text data-v-fec81ed6">元代金券</text>
+      </view>
+      <view class="_view data-v-fec81ed6 voucher-Btn" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <text class="_text data-v-fec81ed6">立即使用</text>
+      </view>
+      <view class="_view data-v-fec81ed6 voucher-times">
+        <text class="_text data-v-fec81ed6">有效期 : {{coupondetail.begin_date}}--{{coupondetail.end_date}}</text>
+      </view>
+      <view class="_view data-v-fec81ed6 voucher-solids"></view>
+      <view class="_view data-v-fec81ed6 voucher-footer">
+        <view class="_view data-v-fec81ed6 footer-tetles">
+          <text class="_text data-v-fec81ed6">使用说明 :</text>
+        </view>
+        <view class="_view data-v-fec81ed6 footer-shows"> {{coupondetail.remark}} </view>
+      </view>
+    </view>
+  </view>
+</template>

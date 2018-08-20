@@ -1,0 +1,40 @@
+<template name="member_center$4911b8d8">
+  <view class="_div data-v-744ecb0a">
+    <view class="_div data-v-744ecb0a coupon">
+      <view wx:if="{{coupons=='undefined' || coupons.length==0}}" class="_div data-v-744ecb0a">
+        <image class="_img data-v-744ecb0a couponicon" src="{{iconconpon}}" alt></image>
+        <label class="_span data-v-744ecb0a sp1">^_^没有更多优惠券o_o</label>
+      </view>
+      <view class="_view data-v-744ecb0a coupons" wx:else>
+        <view class="_view data-v-744ecb0a coupon-lists" wx:key="index" key="{{index}}" wx:for="{{coupons}}" wx:for-index="index" wx:for-item="item">
+          <image src="/copy-asset/static/images/logos1.png" class="_img data-v-744ecb0a coupon-logos"></image>
+          <view class="_view data-v-744ecb0a coupon-teltes">
+            <view class="_view data-v-744ecb0a coupon-shows">
+              <view class="_view data-v-744ecb0a coupon-left" bindtap="handleProxy" data-code="{{item.code}}" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}">
+                <view class="_view data-v-744ecb0a left-money">
+                  <text class="_text data-v-744ecb0a">{{item.type}}</text>
+                </view>
+                <view class="_view data-v-744ecb0a left-telte">
+                  <text class="_text data-v-744ecb0a">{{item.use_rule}}</text>
+                </view>
+              </view>
+              <view class="_view data-v-744ecb0a coupon-right" bindtap="handleProxy" data-code="{{item.code}}" data-eventid="{{'1-'+index}}" data-comkey="{{$k}}">
+                <text class="_text data-v-744ecb0a right-money">¥</text>
+                <text class="_text data-v-744ecb0a right-nums">{{item.face_value}}</text>
+              </view>
+            </view>
+          </view>
+          <view class="_view data-v-744ecb0a time">使用期限 : {{item.begin_date}}--{{item.end_date}}</view>
+        </view>
+      </view>
+      <view class="_p data-v-744ecb0a loadmore" bindtap="handleProxy" wx:if="{{flag=='nosucc'}}" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+        <label wx:if="{{coupons=='undefined' || coupons.length==0}}" class="_span data-v-744ecb0a"></label>
+        <label wx:else class="_span data-v-744ecb0a">{{loadmore1}}</label>
+      </view>
+      <view class="_p data-v-744ecb0a loadmore" wx:else>
+        <label wx:if="{{coupons=='undefined' || coupons.length==0}}" class="_span data-v-744ecb0a"></label>
+        <label wx:else class="_span data-v-744ecb0a">{{loadmore1}}</label>
+      </view>
+    </view>
+  </view>
+</template>

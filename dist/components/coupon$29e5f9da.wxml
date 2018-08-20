@@ -1,0 +1,6 @@
+<import src="recivecoupon$fab2c11e" />
+<template name="coupon$29e5f9da">
+  <view class="_div data-v-ca140f52">
+    <template data="{{...$root[$kk+'0'], $root}}" is="recivecoupon$fab2c11e"></template>
+  </view>
+</template>

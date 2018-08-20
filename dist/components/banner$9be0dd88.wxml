@@ -1,0 +1,11 @@
+<template name="banner$9be0dd88">
+  <swiper class="_swiper data-v-9c234876 swiper" indicator-color="#b9a9a1" indicator-active-color="#fff" indicator-dots="true" autoplay="true" interval="5000" circular duration="1000">
+    <block index="{{index}}" wx:key="index" key="{{index}}" wx:for="{{banner}}" wx:for-index="index" wx:for-item="item">
+      <swiper-item class="_swiper-item data-v-9c234876">
+        <image bindtap="handleProxy" data-val="{{item.detail}}" src="{{item.address}}" class="_image data-v-9c234876 slide-image" mode="aspectFill" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}"></image>
+        <navigator wx:if="{{extraData.webankAppId!=''&&extraData.webankAppId!='undefined'&&extraData.unionId!=''&&extraData.unionId!='undefined'&&extraData.phone!=''&&extraData.phone!='undefined'&&extraData.openId!=''&&extraData.openId!='undefined'&&extraData.memberId!=''&&extraData.memberId!='undefined'&&item.sign=='wemember'}}"
+          class="_navigator data-v-9c234876 wemember" target="miniProgram" open-type="navigate" app-id="{{AppId}}" extra-data="{{extraData}}" version="{{AppVersion}}"></navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+</template>

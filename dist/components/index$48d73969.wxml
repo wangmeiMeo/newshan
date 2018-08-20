@@ -1,0 +1,5 @@
+<template name="index$48d73969">
+  <view class="_div data-v-7b557c13 contain">
+    <image src="{{detail}}" alt class="_img data-v-7b557c13"></image>
+  </view>
+</template>

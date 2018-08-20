@@ -1,0 +1,1 @@
+function webpackJsonp(){require("./../../common.js"),wx.webpackJsonp.apply(null,arguments)}webpackJsonp([4],{179:function(n,e,o){"use strict";var u=o(180),p=function(n){return n&&n.__esModule?n:{default:n}}(u);Component(p.default)}},[179]);

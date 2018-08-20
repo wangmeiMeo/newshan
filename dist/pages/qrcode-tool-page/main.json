@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "qrcode-page": "../../qrcode-tool/pages/components/qrcode-page"
+  }
+}

@@ -1,0 +1,7 @@
+<view class="qrcode-entry" wx:if="{{toolEnabled}}">
+  <image src="../../images/icon_852ef02.png" mode="widthFix" style="width:146rpx;height:146rpx;"></image>
+  <view class="entry-title" bindtap="gotoToolPage">
+    <view>{{titleLine1}}</view>
+    <view>{{titleLine2}}</view>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<template name="shanshanbianli$5093f3a9">
+  <view class="_div data-v-e39fb5b4 contain">
+    <image src="{{detail}}" alt class="_img data-v-e39fb5b4"></image>
+  </view>
+</template>

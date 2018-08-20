@@ -1,0 +1,34 @@
+@import "/static/css/vendor.wxss";
+
+.container.data-v-07100e7c {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eeeeee;
+}
+.container .barcode.data-v-07100e7c {
+  background: #fff;
+  height: 295rpx;
+  padding-bottom: 40rpx;
+}
+.container .barcode .barnum.data-v-07100e7c {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 23rpx;
+  color: #999;
+  text-align: center;
+}
+.container .barcode .barnum text.data-v-07100e7c {
+  font-style: normal;
+  color: #666;
+  letter-spacing: 8rpx;
+  font-size: 28rpx;
+}
+.container .barcode ._canvas.data-v-07100e7c {
+  margin: 0 auto;
+  width: 600rpx;
+  height: 170rpx;
+}

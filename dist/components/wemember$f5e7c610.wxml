@@ -1,0 +1,5 @@
+<template name="wemember$f5e7c610">
+  <view class="_div data-v-08626941 card">
+    <image src="{{card}}" alt class="_img data-v-08626941"></image>
+  </view>
+</template>

@@ -1,0 +1,8 @@
+<template name="navbar$4cb96e53">
+  <view class="_ul data-v-58a12c36 navbar clearfix">
+    <view wx:key="index" key="{{index}}" wx:for="{{navbar}}" wx:for-index="index" wx:for-item="item" class="_li data-v-58a12c36">
+      <image src="{{item.src}}" alt class="_img data-v-58a12c36"></image>
+      <view class="_p data-v-58a12c36 title">{{item.title}}</view>
+    </view>
+  </view>
+</template>

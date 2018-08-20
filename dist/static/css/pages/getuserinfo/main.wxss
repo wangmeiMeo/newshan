@@ -1,0 +1,19 @@
+@import "/static/css/vendor.wxss";
+
+.userinfo ._img {
+  display: block;
+  width: 100%;
+}
+.userinfo .btn {
+  width: 95%;
+  background: #21aee6;
+  color: #fff;
+  border-radius: 16rpx;
+  margin-top: 64rpx;
+  border: 0;
+  outline: 0;
+  border: 0;
+}
+.bg_color {
+  opacity: 0.6;
+}

@@ -1,0 +1,29 @@
+<template name="coupondetail$691f55ab">
+  <view class="_view data-v-53b87b30 page">
+    <view class="_view data-v-53b87b30 voucher-header">
+      <view class="_view data-v-53b87b30 voucher-logos">
+        <image src="/copy-asset/static/images/logos.jpg" class="_img data-v-53b87b30"></image>
+      </view>
+      <view class="_view data-v-53b87b30 voucher-tetles">
+        <text class="_text data-v-53b87b30">{{coupondetail.type}}</text>
+      </view>
+      <view class="_view data-v-53b87b30 voucher-money">
+        <text class="_text data-v-53b87b30 money-tetle">{{coupondetail.face_value}}</text>
+        <text class="_text data-v-53b87b30">元代金券</text>
+      </view>
+      <view class="_view data-v-53b87b30 voucher-Btn" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <text class="_text data-v-53b87b30">立即使用</text>
+      </view>
+      <view class="_view data-v-53b87b30 voucher-times">
+        <text class="_text data-v-53b87b30">有效期 : {{coupondetail.begin_date}}--{{coupondetail.end_date}}</text>
+      </view>
+      <view class="_view data-v-53b87b30 voucher-solids"></view>
+      <view class="_view data-v-53b87b30 voucher-footer">
+        <view class="_view data-v-53b87b30 footer-tetles">
+          <text class="_text data-v-53b87b30">使用说明 :</text>
+        </view>
+        <view class="_view data-v-53b87b30 footer-shows"> {{coupondetail.remark}} </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,7 @@
+<template name="getuserinfo$47a71231">
+  <view class="_view data-v-6c3399d4 userinfo">
+    <image src="http://f.cdn.cloudolphin.com/regist.jpg" class="_img data-v-6c3399d4"></image>
+    <button wx:if="{{canIUse}}" class="_button data-v-6c3399d4 btn" hover-class="bg_color" open-type="getUserInfo" bindtap="handleProxy" bindgetuserinfo="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">授权登录</button>
+    <view wx:else class="_view data-v-6c3399d4">请升级微信版本</view>
+  </view>
+</template>

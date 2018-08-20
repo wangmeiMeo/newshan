@@ -1,0 +1,32 @@
+<template name="indexcoupon$742ca798">
+  <view class="_div data-v-4bc40aaf coupon">
+    <image class="_img data-v-4bc40aaf couponimg" bindtap="handleProxy" src="{{couponimg}}" alt data-eventid="{{'0'}}" data-comkey="{{$k}}"></image>
+    <view class="_ul data-v-4bc40aaf coupons">
+      <view class="_li data-v-4bc40aaf clearfix" wx:key="index" key="{{index}}" wx:for="{{activities}}" wx:for-index="index" wx:for-item="item">
+        <image class="_img data-v-4bc40aaf imgle fl" src="{{url}}" alt></image>
+        <view class="_p data-v-4bc40aaf letitle">
+          <image src="/copy-asset/static/images/letitle.png" class="_img data-v-4bc40aaf"></image>
+          <label class="_span data-v-4bc40aaf">{{item.coupon_name}}</label>
+        </view>
+        <view class="_div data-v-4bc40aaf content fl">
+          <view class="_p data-v-4bc40aaf title">{{item.coupon_type}}</view>
+          <view class="_p data-v-4bc40aaf money" style=" {{('color:' + ricolor + ';')}}">
+            <label class="_span data-v-4bc40aaf">¥</label>
+            <label class="_span data-v-4bc40aaf">{{item.face_value}}</label>
+          </view>
+          <view class="_p data-v-4bc40aaf rule">{{item.use_rule}}</view>
+          <view class="_p data-v-4bc40aaf rule rule1">有效期:{{item.begin_date}}--{{item.end_date}}</view>
+        </view>
+        <view class="_div data-v-4bc40aaf fr ribg" style=" {{('background:' + ricolor + ';')}}">
+          <view class="_div data-v-4bc40aaf sj" style=" {{(  'background-image:' +  ('linear-gradient(-45deg,' +    ricolor +    ' 25%,transparent 25%, transparent),' +    'linear-gradient(-135deg,' +    ricolor +    ' 25%, transparent 25%, transparent)') +  ';')}}"></view>
+          <view class="_view data-v-4bc40aaf progress_box" bindtap="handleProxy" data-activityId="{{item.activity_id}}" data-eventid="{{'1-'+index}}" data-comkey="{{$k}}">
+            <view class="_view data-v-4bc40aaf progress_text">
+              <text class="_text data-v-4bc40aaf">立即</text>
+              <text class="_text data-v-4bc40aaf">领取</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

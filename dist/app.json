@@ -1,0 +1,47 @@
+{
+    "pages": [
+        "pages/index/main",
+        "pages/coupon/main",
+        "pages/coupondetail/main",
+        "pages/getphonenumber/main",
+        "pages/getuserinfo/main",
+        "pages/logs/main",
+        "pages/member_center/member_coupon/member_coupon",
+        "pages/my/main",
+        "pages/mycoupons/main",
+        "pages/searchdoor/main",
+        "pages/shanshanbianli/main",
+        "pages/use_coupon/main",
+        "pages/qrcode-tool-page/main"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "珊珊JustGo",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "selectedColor": "#21aee6",
+        "color": "#dbdbdb",
+        "list": [
+            {
+                "pagePath": "pages/index/main",
+                "iconPath": "/static/images/indexicon01.png",
+                "selectedIconPath": "/static/images/indexicon.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/coupon/main",
+                "iconPath": "/static/images/coupon01.png",
+                "selectedIconPath": "/static/images/couponicon.png",
+                "text": "优惠券"
+            },
+            {
+                "pagePath": "pages/my/main",
+                "iconPath": "/static/images/myicon01.png",
+                "selectedIconPath": "/static/images/myicon.png",
+                "text": "个人中心"
+            }
+        ]
+    }
+}

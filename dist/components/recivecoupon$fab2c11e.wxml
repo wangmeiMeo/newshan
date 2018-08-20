@@ -1,0 +1,31 @@
+<template name="recivecoupon$fab2c11e">
+  <view class="_div data-v-b199b1d8 coupon">
+    <view class="_ul data-v-b199b1d8 coupons" wx:if="{{displays=='block'}}">
+      <view class="_li data-v-b199b1d8 clearfix" wx:key="index" key="{{index}}" wx:for="{{activities}}" wx:for-index="index" wx:for-item="item">
+        <image class="_img data-v-b199b1d8 imgle fl" src="{{url}}" alt></image>
+        <view class="_div data-v-b199b1d8 content fl">
+          <view class="_p data-v-b199b1d8 title">{{item.coupon_type}}</view>
+          <view class="_p data-v-b199b1d8 money" style=" {{('color:' + ricolor + ';')}}">
+            <label class="_span data-v-b199b1d8">¥</label>
+            <label class="_span data-v-b199b1d8">{{item.face_value}}</label>
+          </view>
+          <view class="_p data-v-b199b1d8 rule">{{item.use_rule}}</view>
+          <view class="_p data-v-b199b1d8 rule rule1">有效期:{{item.begin_date}}--{{item.end_date}}</view>
+        </view>
+        <view class="_div data-v-b199b1d8 fr ribg" style=" {{('background:' + ricolor + ';')}}">
+          <view class="_div data-v-b199b1d8 sj" style=" {{(  'background-image:' +  ('linear-gradient(-45deg,' +    ricolor +    ' 25%,transparent 25%, transparent),' +    'linear-gradient(-135deg,' +    ricolor +    ' 25%, transparent 25%, transparent)') +  ';')}}"></view>
+          <view class="_view data-v-b199b1d8 progress_box" bindtap="handleProxy" data-activityId="{{item.activity_id}}" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}">
+            <view class="_view data-v-b199b1d8 progress_text">
+              <text class="_text data-v-b199b1d8">立即</text>
+              <text class="_text data-v-b199b1d8">领取</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view wx:elif="{{displays=='none'}}" class="_div data-v-b199b1d8">
+      <image class="_img data-v-b199b1d8 couponicon" src="{{iconconpon}}" alt></image>
+      <label class="_span data-v-b199b1d8 sp1">^_^没有更多优惠券o_o</label>
+    </view>
+  </view>
+</template>

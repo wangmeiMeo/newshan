@@ -1,0 +1,18 @@
+<template name="webank$10a27966">
+  <view class="_div data-v-03968130 webank">
+    <image class="_img data-v-03968130 img000" src="{{webankurl}}" alt></image>
+    <view class="_div data-v-03968130 clearfix imgs">
+      <navigator wx:if="{{extraData.webankAppId!=''&&extraData.unionId!=''&&extraData.phone!=''&&extraData.openId!=''&&extraData.memberId!=''}}" target="miniProgram" open-type="navigate" app-id="{{AppId}}" extra-data="{{extraData}}" version="{{AppVersion}}"
+        class="_navigator data-v-03968130">
+        <image class="_img data-v-03968130 fl" src="{{webankurl01}}" alt></image>
+      </navigator>
+      <navigator wx:else class="_navigator data-v-03968130">
+        <image class="_img data-v-03968130 fl" src="{{webankurl01}}" alt></image>
+      </navigator>
+      <view class="_div data-v-03968130 fr">
+        <image class="_img data-v-03968130 ritop" src="{{webankurl02}}" alt></image>
+        <image src="{{webankurl03}}" alt class="_img data-v-03968130"></image>
+      </view>
+    </view>
+  </view>
+</template>

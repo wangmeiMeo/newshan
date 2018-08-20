@@ -1,0 +1,14 @@
+@import "/static/css/vendor.wxss";
+
+.contain.data-v-7b557c13 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.contain ._img.data-v-7b557c13 {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,12 @@
+<template name="use_coupon$2235c112">
+  <view class="_div data-v-75f8390f container">
+    <view class="_view data-v-75f8390f barcode">
+      <view class="_view data-v-75f8390f barnum">
+        <text class="_text data-v-75f8390f">*</text>^_^付款时，请向收银员出示此条形码^_^</view>
+      <canvas width="300" height="200" canvas-id="barcode" class="_canvas data-v-75f8390f"></canvas>
+      <view class="_view data-v-75f8390f barnum">
+        <text class="_text data-v-75f8390f">{{code}}</text>
+      </view>
+    </view>
+  </view>
+</template>

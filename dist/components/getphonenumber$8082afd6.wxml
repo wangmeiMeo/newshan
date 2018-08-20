@@ -1,0 +1,7 @@
+<template name="getphonenumber$8082afd6">
+  <view class="_view data-v-054a4cdc userinfo">
+    <image src="http://f.cdn.cloudolphin.com/regist.jpg" class="_img data-v-054a4cdc"></image>
+    <button wx:if="{{canIUse}}" class="_button data-v-054a4cdc btn" hover-class="bg_color" open-type="getPhoneNumber" bindgetphonenumber="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">授权用户手机号</button>
+    <view wx:else class="_view data-v-054a4cdc">请升级微信版本</view>
+  </view>
+</template>

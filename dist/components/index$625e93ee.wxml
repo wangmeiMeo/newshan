@@ -1,0 +1,41 @@
+<template name="index$625e93ee">
+  <view class="_div data-v-0e099f4e">
+    <view class="_div data-v-0e099f4e coupon">
+      <view wx:if="{{coupons=='undefined' || coupons.length==0}}" class="_div data-v-0e099f4e">
+        <image class="_img data-v-0e099f4e couponicon" src="{{iconconpon}}" alt></image>
+        <label class="_span data-v-0e099f4e sp1">^_^没有更多优惠券o_o</label>
+      </view>
+      <view class="_ul data-v-0e099f4e coupons" wx:else>
+        <view class="_li data-v-0e099f4e clearfix" wx:key="index" key="{{index}}" wx:for="{{coupons}}" wx:for-index="index" wx:for-item="item">
+          <image class="_img data-v-0e099f4e imgle fl" src="{{url}}" alt></image>
+          <view class="_div data-v-0e099f4e content fl">
+            <view class="_p data-v-0e099f4e title">{{item.type}}</view>
+            <view class="_p data-v-0e099f4e money" style=" {{('color:' + ricolor + ';')}}">
+              <label class="_span data-v-0e099f4e">¥</label>
+              <label class="_span data-v-0e099f4e">{{item.face_value}}</label>
+            </view>
+            <view class="_p data-v-0e099f4e rule">{{item.use_rule}}</view>
+            <view class="_p data-v-0e099f4e rule rule1">有效期:{{item.begin_date}}--{{item.end_date}}</view>
+          </view>
+          <view class="_div data-v-0e099f4e fr ribg" style=" {{('background:' + ricolor + ';')}}">
+            <view class="_div data-v-0e099f4e sj" style=" {{(  'background-image:' +  ('linear-gradient(-45deg,' +    ricolor +    ' 25%,transparent 25%, transparent),' +    'linear-gradient(-135deg,' +    ricolor +    ' 25%, transparent 25%, transparent)') +  ';')}}"></view>
+            <view class="_view data-v-0e099f4e progress_box" bindtap="handleProxy" data-code="{{item.code}}" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}">
+              <view class="_view data-v-0e099f4e progress_text">
+                <text class="_text data-v-0e099f4e">立即</text>
+                <text class="_text data-v-0e099f4e">使用</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="_p data-v-0e099f4e loadmore" bindtap="handleProxy" wx:if="{{flag=='nosucc'}}" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+        <label wx:if="{{coupons=='undefined' || coupons.length==0}}" class="_span data-v-0e099f4e"></label>
+        <label wx:else class="_span data-v-0e099f4e">{{loadmore1}}</label>
+      </view>
+      <view class="_p data-v-0e099f4e loadmore" wx:else>
+        <label wx:if="{{coupons=='undefined' || coupons.length==0}}" class="_span data-v-0e099f4e"></label>
+        <label wx:else class="_span data-v-0e099f4e">{{loadmore1}}</label>
+      </view>
+    </view>
+  </view>
+</template>

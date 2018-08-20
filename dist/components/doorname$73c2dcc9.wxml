@@ -1,0 +1,30 @@
+<template name="doorname$73c2dcc9">
+  <view class="_div data-v-11cdaddc container">
+    <view class="_div data-v-11cdaddc city_box">
+      <view class="_div data-v-11cdaddc city_left">
+        <scroll-view scroll-y="{{true}}" scroll-with-animation="true" scroll-into-view="{{cityListId}}" class="_scroll-view data-v-11cdaddc" style=" {{('width:' + '100%' + ';' + 'height:' + '100%' + ';')}}">
+          <view class="_div data-v-11cdaddc national" data-types="{{national}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">请选择门店</view>
+          <view class="_div data-v-11cdaddc">
+            <label class="_span data-v-11cdaddc city_name" style="color:#33b9ff;border:0;height:20px;line-height:20px;">最近门店:</label>
+            <label wx:if="{{closedstoreA == undefined ||closedstoreA.storeName == '未授权地理位置' || closedstoreA.storeName == ''}}" class="_span data-v-11cdaddc city_name" style="border-bottom:2px solid #33b9ff;height:50px;line-height:50px;">未授权地理位置</label>
+            <label wx:else class="_span data-v-11cdaddc city_name" style="border-bottom:2px solid #33b9ff;height:50px;line-height:50px;" bindtap="handleProxy" data-val="{{closedstoreA.storeName}}" data-storecode="{{closedstoreA.storeCode}}"
+              data-eventid="{{'1'}}" data-comkey="{{$k}}">{{closedstoreA.storeName}}</label>
+          </view>
+          <view class="_div data-v-11cdaddc">
+            <label class="_span data-v-11cdaddc city_name" style="color:#33b9ff;border:0;height:50px;line-height:50px;">所有门店:</label>
+          </view>
+          <view class="_div data-v-11cdaddc city_list_box">
+            <view wx:key="index2" key="{{index2}}" wx:for="{{citylist}}" wx:for-index="key" wx:for-item="letterItem" class="_div data-v-11cdaddc">
+              <view class="_div data-v-11cdaddc city_first_letter" id="{{key}}">{{key}}</view>
+              <label class="_span data-v-11cdaddc city_name" wx:key="index" key="{{index}}" data-types="{{list}}" bindtap="handleProxy" data-index="{{index}}" hover-class="{{opacity}}" data-val="{{item.storeName}}" data-storecode="{{item.storeCode}}"
+                data-eventid="{{'2-'+key+'-'+index}}" data-comkey="{{$k}}" wx:for="{{letterItem}}" wx:for-index="index" wx:for-item="item">{{item.storeName}}</label>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+      <view class="_div data-v-11cdaddc city_right">
+        <label class="_span data-v-11cdaddc letter_item" wx:key="index1" key="{{index1}}" bindtap="handleProxy" data-item="{{item}}" data-eventid="{{'3-'+index1}}" data-comkey="{{$k}}" wx:for="{{letter}}" wx:for-index="index1" wx:for-item="item">{{item}}</label>
+      </view>
+    </view>
+  </view>
+</template>
